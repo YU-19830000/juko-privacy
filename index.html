@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="柔考 JUKO プライバシーポリシー">
+  <title>柔考 JUKO プライバシーポリシー</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      line-height: 1.8;
+      background: Canvas;
+      color: CanvasText;
+    }
+    main { max-width: 860px; margin: 0 auto; padding: 40px 20px 72px; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.3; margin: 0 0 8px; }
+    h2 { margin-top: 2.4rem; font-size: 1.3rem; line-height: 1.45; border-bottom: 1px solid color-mix(in srgb, CanvasText 18%, transparent); padding-bottom: .4rem; }
+    p, li { font-size: 1rem; }
+    ul { padding-left: 1.4rem; }
+    .meta {
+      margin: 24px 0 32px;
+      padding: 18px 20px;
+      border: 1px solid color-mix(in srgb, CanvasText 18%, transparent);
+      border-radius: 12px;
+      background: color-mix(in srgb, CanvasText 4%, Canvas);
+    }
+    .meta p { margin: .3rem 0; }
+    a { color: LinkText; overflow-wrap: anywhere; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .94em; }
+    footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid color-mix(in srgb, CanvasText 18%, transparent); font-size: .9rem; opacity: .75; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>柔考 JUKO プライバシーポリシー</h1>
+  <p><strong>施行日：2026年9月3日</strong></p>
+
+  <div class="meta">
+    <p><strong>アプリ名：</strong>柔考 JUKO</p>
+    <p><strong>運営者：</strong>上松留梨（Ruri Uematsu）</p>
+    <p><strong>お問い合わせ先：</strong><a href="mailto:uppine8@gmail.com">uppine8@gmail.com</a></p>
+    <p><strong>プライバシーポリシーURL：</strong><a href="https://yu-19830000.github.io/juko-privacy/">https://yu-19830000.github.io/juko-privacy/</a></p>
+  </div>
+
+  <p>柔考 JUKO（以下「本アプリ」）は、柔道の練習後の振り返り、練習記録、課題管理、分析等を支援するiOSアプリです。本ポリシーでは、本アプリにおけるデータの取扱いについて説明します。</p>
+
+  <h2>1. 運営者・お問い合わせ先</h2>
+  <p>本アプリの運営者およびお問い合わせ先は、上記のとおりです。</p>
+
+  <h2>2. 本アプリで扱うデータ</h2>
+  <p>本アプリでは、ユーザーの操作に応じて、主に次の情報を端末内で扱います。</p>
+  <ul>
+    <li>練習日時、練習種別、練習時間、RPE等の練習記録</li>
+    <li>睡眠、疲労、身体の調子、気分、集中、モチベーション、筋肉痛等のコンディション記録</li>
+    <li>技、組み手、動き、寝技、戦術、身体面、メンタル、指導者からの助言等に関する振り返り・気づき</li>
+    <li>現在取り組むテーマ、テーマ評価、次回行動</li>
+    <li>ユーザーが任意で入力する痛み・違和感の記録</li>
+    <li>練習曜日、通知時刻等の設定</li>
+    <li>広告の年齢制限処理に使用する年齢帯設定</li>
+  </ul>
+  <p>本アプリは、広告のために生年月日を要求・保存しません。年齢帯設定として、<code>12歳以下</code>、<code>13〜17歳</code>、<code>18歳以上</code> のいずれかのみをユーザー自身が選択し、端末内のUserDefaultsに保存します。</p>
+
+  <h2>3. 保存場所とiCloud / CloudKit Private</h2>
+  <p>本アプリの練習記録等は、SwiftDataを用いてローカルファーストで保存されます。対応するApple ID・iCloud環境では、AppleのCloudKit Private Databaseを利用してユーザー自身のiCloud環境へ同期される場合があります。</p>
+  <p>本アプリの運営者は、独自のユーザーアカウント用サーバーや、練習記録を保管する独自バックエンドを運用していません。CloudKit Privateに保存されたユーザーデータを、運営者が一般的な管理画面から閲覧する仕組みも設けていません。</p>
+  <p>CloudKitおよびiCloud上でのデータ処理・保持には、Appleのサービス仕様および規約が適用されます。</p>
+
+  <h2>4. 広告について</h2>
+  <p>Free版では、Google Mobile Ads SDK（AdMob）を利用したNative Adsを、記録タイムライン内の限定された位置に表示する場合があります。Home、振り返りの主要フロー、Tasksの主要画面には広告を表示しません。PremiumまたはPremium Lifetimeの有効ユーザーには広告を表示しません。</p>
+  <p>本アプリは初版において、広告リクエストに次の制約を適用します。</p>
+  <ul>
+    <li>広告コンテンツの上限をGeneral相当に設定</li>
+    <li>Publisher Privacy Personalizationを無効化</li>
+    <li>本アプリ独自のATT許可要求を行わない</li>
+    <li>ユーザーが設定した年齢帯をGoogle Mobile Ads SDKの年齢制限処理に反映
+      <ul>
+        <li><code>12歳以下</code> → child</li>
+        <li><code>13〜17歳</code> → teen</li>
+        <li><code>18歳以上</code> → unspecified</li>
+      </ul>
+    </li>
+    <li>年齢帯が未設定の既存ユーザーについては、設定が完了するまでGoogleへの広告リクエストを行わない</li>
+  </ul>
+  <p>年齢帯は生年月日の確認・本人確認を目的としたものではなく、広告の年齢制限処理のための自己申告区分です。</p>
+  <p>Google Mobile Ads SDKは、Googleの仕様により、IPアドレスから推定されるおおまかな位置情報、クラッシュログ、パフォーマンス情報、端末識別子、広告データ、アプリや広告との操作情報等を処理する場合があります。実際のデータ処理は、リリース時点のGoogle Mobile Ads SDK、広告設定およびGoogleのポリシーに従います。</p>
+  <p>Googleのデータ取扱いについては、<a href="https://policies.google.com/privacy">Google プライバシーポリシー</a>および<a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDKのApp Storeデータ開示情報</a>をご確認ください。</p>
+
+  <h2>5. 年齢帯・未成年ユーザーについて</h2>
+  <p>本アプリは中学生以上を主な利用対象として設計しており、App StoreのKids Category向けアプリとして設計していません。</p>
+  <p>一方、広告に関しては未成年ユーザーへの保護を重視し、ユーザー自身が年齢帯を選択して広告の年齢制限処理に反映します。本アプリは、生年月日、学校名、保護者情報等を年齢判定目的で収集しません。また、練習記録その他の入力内容から年齢を推測しません。</p>
+  <p>年齢帯は設定画面から変更できます。</p>
+
+  <h2>6. StoreKitによる購入・Premium権限</h2>
+  <p>Premiumの購入・復元および課金処理にはAppleのStoreKitを利用します。本アプリはAppleが提供する現在の購入権利情報を参照してPremium / Premium Lifetimeの利用可否を判断します。</p>
+  <p>決済そのものはAppleを通じて処理され、本アプリの運営者はクレジットカード番号等の決済情報を独自に取得・保存しません。</p>
+  <p>購入・決済データの処理にはAppleの規約および<a href="https://www.apple.com/legal/privacy/">Apple プライバシーポリシー</a>が適用されます。</p>
+
+  <h2>7. 通知について</h2>
+  <p>本アプリは、ユーザーが希望した場合に、練習後の振り返り等を思い出すためのローカル通知を使用します。</p>
+  <p>通知の利用はユーザーが設定でき、iOSの設定から通知権限を変更できます。本アプリは通知のための独自サーバーや独自のプッシュ通知配信基盤を運用していません。</p>
+
+  <h2>8. Apple Intelligence / Foundation Modelsについて</h2>
+  <p>Premiumユーザーは、対応する端末・OS・言語・地域・Apple Intelligence設定・モデル準備状況等の条件を満たす場合に、AppleのFoundation Modelsを用いた補助的な気づきや意味付け機能を利用できる場合があります。</p>
+  <p>本アプリは、Foundation Modelsへ渡す情報を必要な範囲に圧縮した文字列に限定する設計とし、初版では具体的なPainEntryの詳細をAI入力へ直接渡しません。</p>
+  <p>Apple AIが利用できない場合、本アプリは外部AIサービスへ自動的にフォールバックしません。AI機能の失敗によって練習記録の保存が失われることもありません。</p>
+  <p>Apple Foundation Modelsの処理にはAppleの対応環境・サービス仕様が適用されます。</p>
+
+  <h2>9. ChatGPT等へのユーザー主導の共有</h2>
+  <p>Premium機能では、ユーザーが選択した練習記録等をもとに、ChatGPT等で深掘りするためのテキストを本アプリ内で生成・確認し、iOSの共有機能を使ってユーザー自身が選んだアプリやサービスへ送ることができます。</p>
+  <p>本アプリはOpenAI API、ChatGPT APIその他の外部AI APIへ自動送信する機能を持ちません。共有操作を行わない限り、本機能によってデータが外部サービスへ自動送信されることはありません。</p>
+  <p>共有後のデータは、ユーザーが選択した送信先サービスの利用規約およびプライバシーポリシーに従って取り扱われます。</p>
+
+  <h2>10. 痛み・違和感等の記録について</h2>
+  <p>本アプリには、ユーザーが任意で痛み・違和感等を記録できる機能があります。これらは練習の振り返りのための記録であり、医療上の診断、怪我の予測、治療判断を行うものではありません。</p>
+  <p>本アプリは、痛み等の記録を広告ターゲティングのために利用しません。</p>
+
+  <h2>11. データの保持・削除</h2>
+  <p>本アプリの練習記録をユーザーが削除した場合、アプリ内では原則として30日間「最近削除した項目」として復元可能な状態を経た後、物理削除の対象となります。</p>
+  <p>CloudKit Privateを利用している場合、削除内容はAppleの同期機構を通じて反映されます。iCloud上の同期、保持、バックアップその他Apple側のデータ管理についてはAppleのサービス仕様が適用されます。</p>
+  <p>本アプリの運営者は独自バックエンドに練習記録を保存していないため、運営者側サーバーに保持された練習記録を個別に削除する仕組みはありません。</p>
+  <p>Google Mobile Ads SDK等の第三者サービスが処理するデータについては、各サービス提供者の保持・削除方針が適用されます。</p>
+
+  <h2>12. 同意・設定の変更</h2>
+  <p>ユーザーは、利用可能な範囲で次の設定を変更できます。</p>
+  <ul>
+    <li>通知：iOS設定および本アプリの通知設定から変更</li>
+    <li>広告用年齢帯：本アプリの設定から変更</li>
+    <li>ユーザー主導の外部共有：共有操作を行わないことで送信を行わない</li>
+    <li>練習記録：本アプリ内の削除機能を利用</li>
+  </ul>
+  <p>本アプリが将来、現在とは異なるトラッキング、広告同意、外部サービス連携等を導入する場合は、その導入前に必要な同意フローおよび本ポリシーを見直します。</p>
+
+  <h2>13. 初版の配信地域</h2>
+  <p>初版では、EEA（欧州経済領域）、英国およびスイスを配信対象から除外する方針です。そのため、初版ではGoogle認定CMP / UMPを追加しません。</p>
+  <p>将来これらの地域へ配信を拡大する場合は、配信開始前にその時点のGoogleの同意要件および適用法令を再確認し、必要なCMP・同意フロー・プライバシーポリシーの変更を行います。</p>
+
+  <h2>14. 第三者サービス</h2>
+  <p>本アプリの初版で直接関係する主な第三者・プラットフォームサービスは次のとおりです。</p>
+  <ul>
+    <li>Apple iCloud / CloudKit</li>
+    <li>Apple StoreKit / App Store</li>
+    <li>Apple Foundation Models（対応環境のみ）</li>
+    <li>Google Mobile Ads SDK / AdMob（Free版の広告表示時）</li>
+  </ul>
+  <p>各サービスのデータ処理には、それぞれの提供者の規約・プライバシーポリシーが適用されます。</p>
+
+  <h2>15. 本ポリシーの変更</h2>
+  <p>本アプリの機能、利用するSDK、配信地域、法令・プラットフォーム要件等の変更に応じて、本ポリシーを改定することがあります。</p>
+  <p>重要な変更がある場合は、必要に応じてアプリ内、App Store上または公開Webページ等の適切な方法で案内します。</p>
+
+  <h2>16. お問い合わせ</h2>
+  <p>本ポリシーおよび本アプリのデータ取扱いに関するお問い合わせ先：</p>
+  <p><strong><a href="mailto:uppine8@gmail.com">uppine8@gmail.com</a></strong></p>
+
+  <footer>© 2026 Ruri Uematsu — 柔考 JUKO</footer>
+</main>
+</body>
+</html>
